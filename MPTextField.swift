@@ -58,7 +58,7 @@ class MPTextField: UITextField, UIGestureRecognizerDelegate
         path.addLine(to: endingPoint)
         path.lineWidth = 2.0
         
-        Macros.Colors.brownColor.setStroke()
+        borderColor.setStroke()
         
         path.stroke()
     }
@@ -66,9 +66,9 @@ class MPTextField: UITextField, UIGestureRecognizerDelegate
     func preUI()
     {
         self.autocorrectionType = .no
-        self.setValue(Macros.Colors.brownColor, forKeyPath: "_placeholderLabel.textColor")
-        self.font =  Macros.Fonts.robotoRegular
-        self .textColor = Macros.Colors.brownColor
+        self.setValue(borderColor, forKeyPath: "_placeholderLabel.textColor")
+        self.font =  UIFont.init(name: "Roboto-Regular", size: 16.0)
+        self .textColor = UIColor.black
         self .backgroundColor = UIColor.clear
         self .borderStyle = .none
     }
