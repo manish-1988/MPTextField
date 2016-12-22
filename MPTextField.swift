@@ -16,7 +16,7 @@ class MPTextField: UITextField, UIGestureRecognizerDelegate
     /// show border or hide border.
     @IBInspectable var showBorder: Bool = false
     /// Assign color to border of placeholder.
-    @IBInspectable var borderColor : UIColor = Macros.Colors.brownColor
+    @IBInspectable var borderColor : UIColor = UIColor.black
     @IBInspectable var imageOnLeftView : UIImage!
     @IBInspectable var imageOnRightView: UIImage!
     @IBInspectable var addAction: Bool = false
