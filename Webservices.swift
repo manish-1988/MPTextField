@@ -196,3 +196,36 @@
             }
         }
       }
+      
+      /***** Usage ******/
+      
+      /*
+       
+       let parameters =
+       [
+       "Username": usernameTF.text!,
+       "Password": passwordTF.text!,
+       "UserDevice": [
+       "DeviceRegistrationId": Macros.Constants.deviceRegistrationID,
+       "DeviceId": NSNull(),
+       "DeviceZone": "APNS",
+       "IsPushNotify": true
+       ]
+       ] as [String : Any]
+       
+       print(Macros.Constants.deviceRegistrationID)
+       print(parameters)
+       
+       Webservices.sharedInstance.postRequest(Macros.ServiceName.login, parameters: parameters as [String : AnyObject], showLoader: true) { (response, status, error, time) in
+       
+       print("Time taken for \(Macros.ServiceName.login) api - is \(time)")
+       if error == nil && status == true
+       {
+       }
+    }
+
+       
+       */
+      
+      
+      
